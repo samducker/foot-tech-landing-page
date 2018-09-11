@@ -1,0 +1,111 @@
+.s-hero {
+  position: relative;
+  padding-top: 240px;
+  min-height: 100vh;
+  @media only screen and (max-width: 576px) {
+    min-height: 0;
+    padding: 20px 0 40px;
+    background-color: #164884;
+  }
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 200px solid #164884;
+    border-left: 100vw solid transparent;
+    @media only screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+  &__video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    @media only screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+  &__form {
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+    background-color: #06274E;
+    padding: 20px 40px 45px;
+    z-index: 1;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    @media only screen and (max-width: 768px) {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    @media only screen and (max-width: 576px) {
+      position: static;
+      padding: 20px 20px 45px;
+    }
+    &-title {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 33px;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+    &-item {
+      margin-bottom: 25px;
+    }
+    &-input {
+      width: 100%;
+      height: 36px;
+      padding: 0 16px;
+      font-size: 16px;
+      color: #000;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.15);
+      appearance: none;
+    }
+    &-submit {
+      border-radius: 100px;
+      background-color: #fff;
+      height: 36px;
+      width: 200px;
+      margin: 0 auto;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #000;
+      margin-bottom: 60px;
+    }
+    &-timer {
+      &-title {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 14px;
+      }
+      &-time {
+        &-item {
+          color: rgba(#fff, .7);
+          font-size: 52px;
+          font-weight: 700;
+          margin: 0 20px;
+          text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  }
+}

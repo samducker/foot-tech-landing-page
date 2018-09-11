@@ -1,0 +1,10 @@
+title:
+description:
+
+permalink: pretty
+
+# Google services
+google_analytics:
+
+sass:
+    sass_dir: _scss

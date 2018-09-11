@@ -1,0 +1,28 @@
+---
+---
+
+@import 'common/normalize';
+@import 'common/variables';
+@import 'common/fonts';
+@import 'main';
+
+html,
+body {
+  font-smooth: always;
+  --webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font-family: 'D-DINExp', 'Arial', 'Helvetica', sans-serif,
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

@@ -3,7 +3,7 @@ const getDays = (date) => {
 }
 
 const getDiffArray = () => {
-  var targetDate = new Date(Date.UTC(2018, 9, 20, 12, 30)), // 20 October 12:30
+  var targetDate = new Date(Date.UTC(2018, 8, 29, 00, 00)), // 29 September 12 AM
       currentDate = new Date(),
       diff = new Date(targetDate - currentDate);
 

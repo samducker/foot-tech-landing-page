@@ -198,6 +198,10 @@ table {
     .s-hero {
       min-height: 0;
       padding: 20px 0 40px;
+      background-image: url("/img/alt-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
       background-color: #164884; } }
   .s-hero:after {
     position: absolute;
@@ -208,7 +212,7 @@ table {
     bottom: 0;
     left: 0;
     right: 0;
-    border-bottom: 200px solid #164884;
+    border-bottom: 120px solid #164884;
     border-left: 100vw solid transparent; }
     @media only screen and (max-width: 576px) {
       .s-hero:after {

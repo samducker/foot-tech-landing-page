@@ -1,1 +1,1 @@
-/index http://foot-techacademy.co.uk
+/index.html http://foot-techacademy.co.uk

@@ -40,6 +40,7 @@
     padding-bottom: 60px;
     @media only screen and (max-width: 768px) {
       padding-left: 0;
+      padding-bottom: 0;
     }
   }
   &__title {
@@ -70,9 +71,15 @@
     @media only screen and (max-width: 1336px) {
       margin-left: 0;
     }
+    @media only screen and (min-width: 768px) and (max-height: 900px) {
+      padding: 20px 40px;
+    }
     @media only screen and (max-width: 768px) {
       flex-direction: column;
       align-items: center;
+    }
+    @media only screen and (max-width: 576px) {
+      padding: 20px 20px 45px;
     }
     &-timer {
       margin-top: 20px;
@@ -110,6 +117,9 @@
       text-transform: uppercase;
       color: #000;
       margin-bottom: 60px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
     &-timer {
       &-title {

@@ -22,7 +22,7 @@ const decreaseCountdown = ($items) => {
   diff.forEach((item, index) => {
     $items.eq(index).text(item);
   })
-  
+
   setTimeout(() => {
       decreaseCountdown($items);
   }, 1000);

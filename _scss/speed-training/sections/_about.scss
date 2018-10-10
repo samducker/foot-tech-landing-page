@@ -1,0 +1,53 @@
+.section-about {
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 111px;
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  &__content {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__text {
+    margin-bottom: 36px;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    @include font-din;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mq-md {
+    padding-bottom: 80px;
+
+    &__text {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @include mq-sm {
+    padding-bottom: 100px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      max-width: 95%;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+}

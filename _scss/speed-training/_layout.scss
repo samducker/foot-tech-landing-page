@@ -1,0 +1,15 @@
+.container {
+	max-width: 1220px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $offset-side-lg;
+	padding-right: $offset-side-lg;
+}
+
+.container-narrow {
+	max-width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $offset-side-lg;
+	padding-right: $offset-side-lg;
+}

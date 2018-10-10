@@ -1,0 +1,77 @@
+.section-cta {
+	position: relative;
+	padding-bottom: 53px;
+	background-color: $color-second;
+
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+	}
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: -0.5vw;
+		width: 0;
+		height: 0;
+		border-top: 70px solid #fff;
+		border-left: 101vw solid transparent;
+	}
+
+	&__bg {
+    position: absolute;
+    left: 0;
+		bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: $color-main;
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 80px;
+			left: -0.5vw;
+			width: 0;
+			height: 0;
+			border-right: 101vw solid transparent;
+			border-bottom: 333px solid $color-main;
+		}
+	}
+
+	&__container {
+    position: relative;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__form {
+		float: right;
+	}
+
+  &__animation {
+    position: absolute;
+    left: -34px;
+    top: -90px;
+    z-index: 1;
+  }
+
+  @include mq-md {
+    &__form {
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @include mq-sm {
+    padding-bottom: 40px;
+
+    &__form {
+      margin-top: -40px;
+      max-width: 380px;
+      width: 100%;
+    }
+  }
+}

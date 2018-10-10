@@ -1,0 +1,46 @@
+.social-buttons {
+	display: flex;
+}
+
+.social-button {
+	position: relative;
+	text-align: center;
+	padding-top: 40px;
+	margin-right: 15px;
+
+	&:last-child {
+		.social-button {
+			&__icon {
+				transform: translateX(-10%);
+			}
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	&__icon {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: 10px;
+	}
+
+	&__caption {
+		font-size: 8px;
+		font-weight: 700;
+	}
+
+	@include mq-md {
+		&:last-child {
+			.social-button {
+				&__icon {
+					transform: translateX(-50%);
+				}
+			}
+		}
+	}
+}

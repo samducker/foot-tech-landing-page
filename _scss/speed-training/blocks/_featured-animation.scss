@@ -1,0 +1,63 @@
+.featured-animation {
+	position: relative;
+
+	&__inner {
+		opacity: 0;
+		will-change: opacity;
+	}
+
+	&__image-container {
+		position: absolute;
+		left: 28%;
+		top: 18%;
+		z-index: 1;
+		will-change: transform;
+	}
+
+	&__boy {
+		position: relative;
+		width: 278px;
+		z-index: 1;
+		will-change: transform;
+	}
+
+	&__leg {
+		position: absolute;
+		bottom: 11.5%;
+		left: 13.8%;
+		width: 159px;
+		will-change: transform;
+    transform-origin: right top;
+	}
+
+	&__wheel {
+		width: 548px;
+		height: auto;
+		will-change: transform;
+	}
+
+	&._with-bg {
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 87%;
+			height: 87%;
+			transform: translate(-50%, -50%);
+			border-radius: 50%;
+			background-image: linear-gradient(
+				to bottom,
+				$color-second,
+				$color-second 20%,
+				transparent 20%,
+				transparent 100%
+			);
+		}
+	}
+
+  @include mq-md {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+.section-benefits {
+  padding-top: 50px;
+  background-color: #fff;
+
+  &__title {
+    margin-bottom: 27px;
+    line-height: 1.2;
+  }
+
+  @include mq-sm {
+    padding-bottom: 50px;
+  }
+}

@@ -1,0 +1,49 @@
+@mixin font-family($font-name) {
+	font-family: $font-name, Arial, sans-serif;
+}
+
+@mixin font-d-din-exp {
+	@include font-family('D-DIN Exp');
+}
+
+@mixin font-din {
+	@include font-family('DIN');
+}
+
+@mixin font-d-din {
+	@include font-family('D-DIN');
+}
+
+@mixin font-d-din-condensed {
+	@include font-family('D-DIN Condensed');
+}
+
+@mixin min-screen-xlg {
+	@media screen and (min-width: $breakpoint-lg + 1px) {
+		@content;
+	}
+}
+
+@mixin max-screen($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}
+
+@mixin mq-lg {
+	@include max-screen($breakpoint-lg) {
+		@content;
+	}
+}
+
+@mixin mq-md {
+	@include max-screen($breakpoint-md) {
+		@content;
+	}
+}
+
+@mixin mq-sm {
+	@include max-screen($breakpoint-sm) {
+		@content;
+	}
+}

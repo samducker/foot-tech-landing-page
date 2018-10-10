@@ -1,0 +1,18 @@
+.input-text {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 5px;
+  height: 37px;
+  padding: 0 21px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #000;
+  font-weight: 300;
+  box-shadow: 5px 5px 4px rgba(#000, 0.15);
+  letter-spacing: 0.05em;
+  @include font-din;
+  
+  &::placeholder {
+    color: #000;
+  }
+}

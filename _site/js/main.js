@@ -6,9 +6,18 @@ function daysToMs(value) {
   return value * 1000 * 3600 * 24;
 }
 
+function msToHours(value) {
+  return Math.floor(value / (1000 * 3600));
+}
+
+function hoursToMs(value) {
+  return value * 1000 * 3600;
+}
+
 function msToMinutes(value) {
   return Math.floor(value / (1000 * 60));
 }
+
 
 function minutesToMs(value) {
   return value * 1000 * 60;
@@ -27,15 +36,15 @@ function getDiffArray () {
   var days = msToDays(diff);
 
   var daysMs = daysToMs(days);
-  var minutes = msToMinutes(diff - daysMs);
+  var hours = msToHours(diff - daysMs);
 
-  var minutesMs = minutesToMs(minutes);
-  var seconds = msToSeconds(diff - daysMs - minutesMs);
+  var hoursMs = hoursToMs(hours);
+  var minutes = msToMinutes(diff - daysMs - hoursMs);
 
   return [
     days,
+    hours,
     minutes,
-    seconds,
   ];
 }
 

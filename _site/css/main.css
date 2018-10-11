@@ -59,7 +59,7 @@ table {
   width: 100%;
   background-color: #164884;
   text-align: center; }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 768px) {
     .s-header {
       position: static; } }
   .s-header__top {
@@ -197,16 +197,17 @@ table {
   min-height: 750px; }
   @media only screen and (max-width: 768px) {
     .s-hero {
-      height: 1000px; } }
-  @media only screen and (max-width: 576px) {
-    .s-hero {
       min-height: 0;
-      padding: 20px 0 40px;
-      background-image: url("/img/alt-bg.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-color: #164884; } }
+      padding-top: 0;
+      background-color: #164884;
+      height: auto; }
+      .s-hero:before {
+        content: "";
+        display: block;
+        height: 60vw;
+        background: url("/img/alt-bg.jpg") no-repeat center;
+        background-size: cover;
+        margin-bottom: 40px; } }
   .s-hero:after {
     position: absolute;
     display: block;
@@ -218,7 +219,7 @@ table {
     right: 0;
     border-bottom: 120px solid #164884;
     border-left: 100vw solid transparent; }
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
       .s-hero:after {
         display: none; } }
   .s-hero__video {
@@ -234,14 +235,14 @@ table {
     bottom: 0;
     left: 0;
     z-index: -1; }
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
       .s-hero__video {
         display: none; } }
   .s-hero__form {
     position: absolute;
     bottom: 10px;
     left: 100px;
-    background-color: #06274E;
+    background-color: #06274e;
     padding: 20px 40px 45px;
     z-index: 1;
     max-width: 420px;
@@ -249,9 +250,7 @@ table {
     text-align: center; }
     @media only screen and (max-width: 768px) {
       .s-hero__form {
-        bottom: -200px;
-        left: 0;
-        right: 0;
+        position: static;
         margin: 0 auto; } }
     .s-hero__form-title {
       font-weight: 400;
@@ -294,24 +293,14 @@ table {
       text-transform: uppercase;
       color: #000;
       margin-bottom: 60px; }
-      @media only screen and (min-width: 768px) and (max-height: 900px) {
+      @media only screen and (max-width: 768px) {
         .s-hero__form-submit {
-          margin-bottom: 20px; } }
+          margin-bottom: 32px; } }
     .s-hero__form-timer-title {
       font-size: 16px;
       text-transform: uppercase;
       color: #fff;
       margin-bottom: 14px; }
-    .s-hero__form-timer-time-item {
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 52px;
-      font-weight: 700;
-      margin: 0 20px;
-      text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15); }
-      @media only screen and (min-width: 768px) and (max-height: 796px) {
-        .s-hero__form-timer-time-item {
-          font-size: 24px;
-          margin: 0 14px; } }
 
 .s-join {
   position: relative;
@@ -329,7 +318,7 @@ table {
         display: none; } }
   @media only screen and (max-width: 768px) {
     .s-join {
-      padding: 260px 0 80px; } }
+      padding: 60px 0 80px; } }
   .s-join__footballer {
     position: absolute;
     right: 60px;
@@ -626,7 +615,7 @@ table {
 
 .s-form {
   position: relative;
-  background-color: #0A3161; }
+  background-color: #0a3161; }
   .s-form:before {
     position: absolute;
     display: block;
@@ -673,6 +662,7 @@ table {
     padding-bottom: 60px; }
     @media only screen and (max-width: 768px) {
       .s-form__right {
+        margin-top: 20px;
         padding-left: 0;
         padding-bottom: 0; } }
   .s-form__title {
@@ -696,7 +686,7 @@ table {
     padding: 50px 55px 30px 50px;
     border-radius: 5px;
     box-shadow: 5px 10px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: #0A3161;
+    background-color: #0a3161;
     -webkit-transform: translateY(-20px);
             transform: translateY(-20px);
     z-index: 1; }
@@ -760,12 +750,18 @@ table {
       text-transform: uppercase;
       color: #fff;
       margin-bottom: 14px; }
-    .s-form__form-timer-time-item {
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 52px;
-      font-weight: 700;
-      margin: 0 20px;
-      text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15); }
+
+.timer {
+  margin: 0 -10px; }
+  .timer__item {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 52px;
+    font-weight: 700;
+    margin: 0 10px;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15); }
+    @media only screen and (max-width: 768px) {
+      .timer__item {
+        font-size: 24px; } }
 
 html,
 body {

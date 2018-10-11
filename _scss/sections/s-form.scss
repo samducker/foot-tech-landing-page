@@ -1,6 +1,6 @@
 .s-form {
   position: relative;
-  background-color: #0A3161;
+  background-color: #0a3161;
   &:before {
     position: absolute;
     display: block;
@@ -39,6 +39,7 @@
     text-align: center;
     padding-bottom: 60px;
     @media only screen and (max-width: 768px) {
+      margin-top: 20px;
       padding-left: 0;
       padding-bottom: 0;
     }
@@ -65,7 +66,7 @@
     padding: 50px 55px 30px 50px;
     border-radius: 5px;
     box-shadow: 5px 10px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: #0A3161;
+    background-color: #0a3161;
     transform: translateY(-20px);
     z-index: 1;
     @media only screen and (max-width: 1336px) {
@@ -127,15 +128,6 @@
         text-transform: uppercase;
         color: #fff;
         margin-bottom: 14px;
-      }
-      &-time {
-        &-item {
-          color: rgba(#fff, .7);
-          font-size: 52px;
-          font-weight: 700;
-          margin: 0 20px;
-          text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
-        }
       }
     }
   }

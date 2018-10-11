@@ -4,16 +4,18 @@
   height: 100vh;
   min-height: 750px;
   @media only screen and (max-width: 768px) {
-    height: 1000px;
-  }
-  @media only screen and (max-width: 576px) {
     min-height: 0;
-    padding: 20px 0 40px;
-    background-image: url('/img/alt-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    padding-top: 0;
     background-color: #164884;
+    height: auto;
+    &:before {
+      content: "";
+      display: block;
+      height: 60vw;
+      background: url('/img/alt-bg.jpg') no-repeat center;
+      background-size: cover;
+      margin-bottom: 40px;
+    }
   }
   &:after {
     position: absolute;
@@ -26,7 +28,7 @@
     right: 0;
     border-bottom: 120px solid #164884;
     border-left: 100vw solid transparent;
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
       display: none;
     }
   }
@@ -41,7 +43,7 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    @media only screen and (max-width: 576px) {
+    @media only screen and (max-width: 768px) {
       display: none;
     }
   }
@@ -49,16 +51,17 @@
     position: absolute;
     bottom: 10px;
     left: 100px;
-    background-color: #06274E;
+    background-color: #06274e;
     padding: 20px 40px 45px;
     z-index: 1;
     max-width: 420px;
     width: 100%;
     text-align: center;
     @media only screen and (max-width: 768px) {
-      bottom: -200px;
-      left: 0;
-      right: 0;
+      position: static;
+      //bottom: -200px;
+      //left: 0;
+      //right: 0;
       margin: 0 auto;
     }
     &-title {
@@ -103,8 +106,8 @@
       text-transform: uppercase;
       color: #000;
       margin-bottom: 60px;
-      @media only screen and (min-width: 768px) and (max-height: 900px) {
-        margin-bottom: 20px;
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 32px;
       }
     }
     &-timer {
@@ -113,19 +116,6 @@
         text-transform: uppercase;
         color: #fff;
         margin-bottom: 14px;
-      }
-      &-time {
-        &-item {
-          color: rgba(#fff, .7);
-          font-size: 52px;
-          font-weight: 700;
-          margin: 0 20px;
-          text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
-          @media only screen and (min-width: 768px) and (max-height: 796px) {
-            font-size: 24px;
-            margin: 0 14px;
-          }
-        }
       }
     }
   }

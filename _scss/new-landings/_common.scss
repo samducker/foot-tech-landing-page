@@ -1,0 +1,75 @@
+body {
+	@include font-d-din-exp;
+	color: #203651;
+  background-color: $color-second;
+
+  &, * {
+    letter-spacing: 0.05em;
+  }
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.text {
+  line-height: 1.6;
+}
+
+.button {
+	display: block;
+	border: none;
+	-webkit-appearance: none;
+	text-decoration: none;
+	cursor: pointer;
+	user-select: none;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.button:hover {
+}
+
+.button:active {
+}
+
+.title-bar {
+	$font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: $color-main;
+  height: 111px;
+  padding-top: 8px;
+
+	&__content {
+		text-align: center;
+		font-weight: 700;
+		line-height: 1.4;
+		font-size: 25px;
+	}
+
+	&__main {
+    font-size: 1em;
+    font-weight: inherit;
+	}
+
+	&__additional {
+		font-size: em(30px, $font-size);
+	}
+
+  @include mq-sm {
+    height: auto;
+    padding: 20px 0 15px;
+
+    &__content {
+      font-size: 16px;
+    }
+
+    &__additional {
+      font-size: 1.1em;
+    }
+  }
+}

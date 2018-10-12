@@ -1,0 +1,52 @@
+$bottom-triangle-height: 85px;
+
+.section-event {
+	position: relative;
+	margin-top: -$top-triangle-height;
+	padding-top: 237px;
+	padding-bottom: 240px;
+	color: #fff;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - #{vw($bottom-triangle-height)}));
+
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		clip-path: polygon(0 vw($top-triangle-height), 100% 0, 100% 100%, 0% 100%);
+		border: none;
+		transform: none;
+		@include gradient-bg;
+	}
+
+	&__container {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__title {
+		margin-bottom: 54px;
+	}
+
+	&__table {
+		margin-bottom: 58px;
+	}
+
+	@include min-screen-xlg {
+		&._october-special {
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - #{$bottom-triangle-height}));
+
+			&:before {
+				clip-path: polygon(0 $top-triangle-height, 100% 0, 100% 100%, 0% 100%);
+			}
+		}
+	}
+
+  @include mq-sm {
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+}

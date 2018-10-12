@@ -1,0 +1,266 @@
+.form {
+	position: relative;
+	padding: 35px 43px 43px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color: $color-second;
+	z-index: 1;
+	color: #fff;
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		left: 0;
+	}
+
+	&:before {
+		bottom: 44px;
+		background: url('/img/common/form-bg2.png') no-repeat center bottom;
+		padding-bottom: 66.2763466042%;
+		background-size: 100% 100%;
+	}
+
+	&:after {
+		bottom: 0;
+		background: url('/img/common/form-bg1.png') no-repeat center bottom;
+		padding-bottom: 61.3583138173%;
+		background-size: 100% 100%;
+	}
+
+	&__head {
+		@include font-din;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 37px;
+		margin-bottom: 27px;
+		text-align: center;
+		line-height: 1.2;
+		letter-spacing: 0.21em;
+		white-space: nowrap;
+	}
+
+	&__title {
+		@include font-din;
+		position: relative;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 74px;
+		z-index: 1;
+		text-align: center;
+		width: 266px;
+		margin-right: 12px;
+		padding-top: 22px;
+		line-height: 1.2;
+		letter-spacing: 0.05em;
+	}
+
+	&__inner {
+		position: relative;
+		z-index: 1;
+	}
+
+	&__label {
+		@include font-din;
+		display: block;
+		font-weight: 300;
+		letter-spacing: 0.15em;
+		font-size: 16px;
+	}
+
+	&__date-wrapper {
+		margin-bottom: 17px;
+	}
+
+	&__date-label {
+		margin-bottom: 10px;
+	}
+
+	&__date-inputs {
+		display: flex;
+	}
+
+	&__date-input {
+		width: 74px;
+		margin-right: 15px;
+		padding: 0 4px;
+		text-align: center;
+	}
+
+	&__checkbox-group {
+		margin-bottom: 19px;
+
+		&-title {
+			@include font-din;
+			letter-spacing: 0.15em;
+			font-weight: 300;
+			margin-bottom: 11px;
+			font-size: 13px;
+		}
+
+		&-item {
+			margin-bottom: 6px;
+		}
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+		margin-bottom: 25px;
+
+		&:last-of-type {
+			margin-bottom: 39px;
+		}
+	}
+
+	&__submit {
+		display: block;
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		box-shadow: 5px 5px 4px rgba(#000, 0.15);
+		background-color: #fff;
+	}
+
+	&__pumpkin {
+		position: absolute;
+		width: 126px;
+		z-index: 1;
+
+		&._left {
+			left: -66px;
+			bottom: -20px;
+		}
+
+		&._right {
+			right: -38px;
+			bottom: -20px;
+		}
+	}
+
+	&__leaves {
+		position: absolute;
+		left: -77px;
+		top: -85px;
+	}
+
+	&._with-title {
+		display: flex;
+		padding: 41px 30px 41px 14px;
+
+		&:before {
+			padding-bottom: 41.8%;
+		}
+
+		&:after {
+			padding-bottom: 38%;
+		}
+
+		.form {
+			&__inner {
+				max-width: 316px;
+				flex: 1;
+			}
+
+			&__input {
+				height: 34px;
+			}
+		}
+	}
+
+	&._shadow {
+		box-shadow: 8px 8px 10px rgba(#000, 0.15);
+	}
+
+	&._extended {
+		padding: 19px 0 0;
+
+		.form {
+			&__container {
+				position: relative;
+				padding: 0 40px 23px;
+				z-index: 1;
+			}
+
+			&__input {
+				width: 344px;
+				max-width: 100%;
+
+				&:last-of-type {
+					margin-bottom: 24px;
+				}
+			}
+		}
+
+		&._alt-padding {
+			padding-top: 40px;
+
+			.form {
+				&__container {
+					padding: 0 52px 40px;
+				}
+			}
+		}
+	}
+
+	@include max-screen(1400px) {
+		&__pumpkin {
+			&._left {
+				display: none;
+			}
+		}
+	}
+
+	@include mq-lg {
+		& {
+			&__title {
+				position: static;
+				width: 100%;
+				padding-top: 0;
+				margin-right: 0;
+				font-size: 40px;
+				margin-bottom: 20px;
+			}
+		}
+
+		&._with-title {
+			display: block;
+			padding: 20px 40px;
+		}
+	}
+
+	@include mq-sm {
+		&__head {
+			font-size: 30px;
+			letter-spacing: 0.05em;
+		}
+
+		&,
+		&._with-title {
+			padding: 30px 20px;
+		}
+
+		&._extended {
+			&, &._alt-padding {
+				padding-top: 30px;
+
+				.form {
+					&__container {
+						padding: 0 25px 30px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.checkbox-group-item {
+	display: flex;
+
+	&__label {
+		min-width: 243px;
+	}
+}

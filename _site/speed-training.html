@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Foot-tech Speed Training</title>
-  <link rel="stylesheet" href="/css/speed-training.css">
+  <link rel="stylesheet" href="/css/new-landings.css">
 </head>
 <body>
 <div class="wrapper">
   <header class="header">
-    <img class="header__logo logo" src="/img/speed-training/logo.png" alt="Logo"/>
+    <img class="header__logo logo" src="/img/common/logo.png" alt="Logo"/>
   </header>
   <div class="title-bar">
     <div class="title-bar__content container">
@@ -22,11 +22,11 @@
     <div class="intro__container container">
       <form class="intro__form form" action="#" method="POST">
         <div class="form__inner">
-          <input class="form__input input-text" name="parents-full-name" type="text" placeholder="Parents full name"/>
-          <input class="form__input input-text" name="children-name" type="text" placeholder="Child's name"/>
-          <input class="form__input input-text" name="children-birth" type="text" placeholder="Child's date of birth"/>
-          <input class="form__input input-text" name="email" type="text" placeholder="Your email address"/>
-          <input class="form__input input-text" name="phone" type="text" placeholder="Your mobile number"/>
+          <input class="form__input input-text" name="parents-full-name" type="text" placeholder="Parents full name" required/>
+          <input class="form__input input-text" name="children-name" type="text" placeholder="Child's name" required/>
+          <input class="form__input input-text" name="children-birth" type="text" placeholder="Child's date of birth" required/>
+          <input class="form__input input-text" name="email" type="email" placeholder="Your email address" required/>
+          <input class="form__input input-text" name="phone" type="text" placeholder="Your mobile number" required/>
           <button class="form__submit submit">Submit</button>
         </div>
       </form>
@@ -56,17 +56,17 @@
         </div>
         <div class="section-main__features features">
           <div class="features__item features-item">
-            <img class="features-item__icon _smile" src="/img/speed-training/icon-smile.png" aria-hidden="true"/>
+            <img class="features-item__icon _smile" src="/img/common/icons/smile.png" aria-hidden="true"/>
             <div class="features-item__caption">Increased Wellbeing</div>
             <div class="features-item__text">Learn new skills through the art of play to develop wellbeing and mental health</div>
           </div>
           <div class="features__item features-item">
-            <img class="features-item__icon _rock" src="/img/speed-training/icon-rock.png" aria-hidden="true"/>
+            <img class="features-item__icon _rock" src="/img/common/icons/rock.png" aria-hidden="true"/>
             <div class="features-item__caption">Build confidence</div>
             <div class="features-item__text">gain confidence by developing the fundamental movements that help in any sport and every day life</div>
           </div>
           <div class="features__item features-item">
-            <img class="features-item__icon _run" src="/img/speed-training/icon-run.png" aria-hidden="true"/>
+            <img class="features-item__icon _run" src="/img/common/icons/run.png" aria-hidden="true"/>
             <div class="features-item__caption">Physical Development</div>
             <div class="features-item__text">increase your child's fitness in a fun way</div>
           </div>
@@ -138,7 +138,7 @@
           <img src="/img/speed-training/letter-wheel.png" class="featured-animation__wheel" data-featured-animation-wheel/>
         </div>
       </div>
-      <form class="section-cta__form form _with-title" action="#" method="POST">
+      <form class="section-cta__form form _with-title _shadow" action="#" method="POST">
         <div class="form__title">Sign Up  Today</div>
         <div class="form__inner">
           <input class="form__input input-text" name="parents-full-name" type="text" placeholder="Parents full name"/>
@@ -154,7 +154,7 @@
   </section>
   <footer class="footer">
     <div class="footer__container container">
-      <img src="/img/speed-training/logo-white.png" alt="Logo" class="footer__logo">
+      <img src="/img/common/logo-white.png" alt="Logo" class="footer__logo">
       <div class="footer__contacts">
         <div class="footer-contact">
           <div class="footer-contact__title">Email Us</div>
@@ -168,19 +168,19 @@
       <div class="footer__social social-buttons">
         <div class="social-button">
           <a href="#" class="social-button__link">
-            <img src="/img/speed-training/social/facebook.svg" class="social-button__icon _facebook" aria-hidden="true"/>
+            <img src="/img/common/social/facebook.svg" class="social-button__icon _facebook" aria-hidden="true"/>
             <div class="social-button__caption">Foot-Tech Academy</div>
           </a>
         </div>
         <div class="social-button">
           <a href="#" class="social-button__link">
-            <img src="/img/speed-training/social/instagram.svg" class="social-button__icon _instagram" aria-hidden="true"/>
+            <img src="/img/common/social/instagram.svg" class="social-button__icon _instagram" aria-hidden="true"/>
             <div class="social-button__caption">foottech_academy</div>
           </a>
         </div>
         <div class="social-button">
           <a href="#" class="social-button__link">
-            <img src="/img/speed-training/social/twitter.svg" class="social-button__icon _twitter" aria-hidden="true"/>
+            <img src="/img/common/social/twitter.svg" class="social-button__icon _twitter" aria-hidden="true"/>
             <div class="social-button__caption">FootTechAcademy</div>
           </a>
         </div>
@@ -188,6 +188,6 @@
     </div>
   </footer>
 </div>
-<script src="/js/speed-training/bundle.js"></script>
+<script src="/js/new-landings/speed-training.js"></script>
 </body>
 </html>

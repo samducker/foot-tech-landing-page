@@ -1,0 +1,66 @@
+.event-table {
+	position: relative;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	color: $color-second;
+	text-align: center;
+	padding: 38px 38px 40px;
+	border-radius: 5px;
+	@include font-din;
+
+	&__title {
+		font-size: 30px;
+		font-weight: 700;
+		margin-bottom: 35px;
+		letter-spacing: 0.01em;
+	}
+
+	&__time {
+		margin-bottom: 40px;
+	}
+
+	&__prices {
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		font-size: 25px;
+		font-weight: 500;
+		line-height: 1.4;
+	}
+
+	&__text-small,
+	&__text-tiny {
+		@include font-d-din-exp;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+
+	&__text-small {
+		font-size: 20px;
+	}
+
+	&__text-tiny {
+		font-size: 12px;
+	}
+
+	&__leaves1 {
+		position: absolute;
+		right: -50px;
+		bottom: -86px;
+		z-index: 1;
+	}
+
+	&__leaves2 {
+		position: absolute;
+		left: -34px;
+		bottom: -27px;
+		width: 112px;
+	}
+
+	@include mq-md {
+    max-width: 90%
+	}
+}

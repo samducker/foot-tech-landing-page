@@ -1,0 +1,36 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 82px;
+	background-color: $color-second;
+
+	&__logo {
+		display: block;
+		width: 104px;
+	}
+
+  &._large {
+    height: 104px;
+
+    .header {
+      &__logo {
+        width: 160px;
+      }
+    }
+  }
+
+	@include mq-md {
+		height: 70px;
+
+    &._large {
+      height: 80px;
+
+      .header {
+        &__logo {
+          width: 120px;
+        }
+      }
+    }
+	}
+}

@@ -1,0 +1,163 @@
+.section-cta {
+	position: relative;
+	padding-bottom: 53px;
+	background-color: $color-second;
+	z-index: 2;
+
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+	}
+
+	&:before {
+		position: absolute;
+		top: 0;
+		left: -0.5vw;
+		width: 0;
+		height: 0;
+		border-top: 70px solid #fff;
+		border-left: 101vw solid transparent;
+	}
+
+	&__bg {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 80px;
+		background-color: $color-main;
+
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom: 80px;
+			left: -0.5vw;
+			width: 0;
+			height: 0;
+			border-right: 101vw solid transparent;
+			border-bottom: 333px solid $color-main;
+		}
+	}
+
+	&__container {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+		z-index: 1;
+	}
+
+	&__form {
+		float: right;
+	}
+
+	&__animation {
+		position: absolute;
+		left: -34px;
+		top: -90px;
+		z-index: 1;
+	}
+
+	&__illustration {
+		width: 256px;
+		height: auto;
+	}
+
+	&__leaves1 {
+		position: absolute;
+		left: -258px;
+		top: -21px;
+		z-index: 1;
+	}
+
+	&__leaves2 {
+		position: absolute;
+		right: -140px;
+		top: -73px;
+	}
+
+	&._october-special {
+		padding-top: 0;
+		padding-bottom: 60px;
+		height: 463px;
+
+		&:before {
+			display: none;
+		}
+
+		.section-cta {
+			&__container {
+				display: block;
+				position: relative;
+				max-width: 760px;
+				height: 100%;
+
+				> * {
+					flex-shrink: 0;
+				}
+			}
+
+			&__container-inner {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				bottom: 0;
+				left: 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+			}
+		}
+	}
+
+	@include mq-md {
+		&__illustration {
+			display: none;
+		}
+
+		&__form {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&._october-special {
+      height: auto;
+
+			.section-cta {
+
+        &__container {
+          position: relative;
+          top: -80px;
+          margin-bottom: -80px;
+        }
+
+				&__container-inner {
+          display: block;
+          position: static;
+				}
+
+        &__form {
+          position: relative;
+        }
+			}
+		}
+	}
+
+	@include mq-sm {
+		padding-bottom: 40px;
+
+    &__form-extended, &__form {
+			width: 100%;
+			max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+		&__form {
+			margin-top: -40px;
+		}
+
+	}
+}

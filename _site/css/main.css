@@ -543,9 +543,13 @@ table {
   line-height: 34px;
   text-align: center;
   letter-spacing: .5px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
   @media only screen and (max-width: 768px) {
     .s-about__row {
+      max-width: 100%;
       font-size: 16px;
       line-height: 24px; } }
   .s-about__row p:not(:last-child) {
@@ -615,7 +619,11 @@ table {
 
 .s-form {
   position: relative;
-  background-color: #0a3161; }
+  background-color: #0a3161;
+  padding-bottom: 30px; }
+  @media only screen and (max-width: 1336px) {
+    .s-form {
+      padding-bottom: 0; } }
   .s-form:before {
     position: absolute;
     display: block;
@@ -654,6 +662,9 @@ table {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;

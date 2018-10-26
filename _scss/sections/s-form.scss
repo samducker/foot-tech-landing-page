@@ -1,6 +1,10 @@
 .s-form {
   position: relative;
   background-color: #0a3161;
+  padding-bottom: 30px;
+  @media only screen and (max-width: 1336px) {
+    padding-bottom: 0;
+  }
   &:before {
     position: absolute;
     display: block;
@@ -34,6 +38,7 @@
   &__right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-grow: 1;
     padding-left: 50px;
     text-align: center;

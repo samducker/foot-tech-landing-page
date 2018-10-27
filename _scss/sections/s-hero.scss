@@ -1,7 +1,7 @@
 .s-hero {
   position: relative;
   padding-top: 240px;
-  height: 100vh;
+  height: 931px;
   min-height: 750px;
   @media only screen and (max-width: 768px) {
     min-height: 0;
@@ -51,7 +51,8 @@
     position: absolute;
     bottom: 10px;
     left: 100px;
-    background-color: #06274e;
+    background: #164884 url("/img/form-tall-bg.png") no-repeat center bottom;
+    background-size: 100%;
     padding: 20px 40px 45px;
     z-index: 1;
     max-width: 420px;
@@ -63,6 +64,7 @@
       //left: 0;
       //right: 0;
       margin: 0 auto;
+      box-shadow: 3px 3px 10px rgba(#000, 0.15);
     }
     &-title {
       font-weight: 400;
@@ -73,13 +75,13 @@
       letter-spacing: 1px;
       margin-bottom: 25px;
       @media only screen and (min-width: 768px) and (max-height: 900px) {
-        margin-bottom: 15px;
+        //margin-bottom: 15px;
       }
     }
     &-item {
       margin-bottom: 25px;
       @media only screen and (min-width: 768px) and (max-height: 900px) {
-        margin-bottom: 20px;
+        //margin-bottom: 20px;
       }
     }
     &-input {
@@ -93,7 +95,7 @@
       box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.15);
       appearance: none;
       @media only screen and (min-width: 768px) and (max-height: 760px) {
-        height: 24px;
+        //height: 24px;
       }
     }
     &-submit {

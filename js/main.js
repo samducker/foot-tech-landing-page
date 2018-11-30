@@ -28,7 +28,7 @@ function msToSeconds(value) {
 }
 
 function getDiffArray () {
-  var targetDate = new Date(2018, 9, 30, 0, 0); // 30 October 12 AM
+  var targetDate = new Date(2018, 12, 17, 0, 0); // 30 October 12 AM
   var currentDate = new Date();
 
   var diff = targetDate - currentDate;
